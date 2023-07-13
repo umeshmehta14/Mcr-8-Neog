@@ -10,7 +10,7 @@ export const DataProvider = ({ children }) => {
     searchKey: "",
   });
   return (
-    <DataContext.Provider value={{ meets, filters, setFilters }}>
+    <DataContext.Provider value={{ meets, filters, setMeets, setFilters }}>
       {children}
     </DataContext.Provider>
   );

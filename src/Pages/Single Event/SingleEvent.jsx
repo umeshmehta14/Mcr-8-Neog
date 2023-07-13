@@ -17,16 +17,15 @@ const SingleEvent = () => {
 
   const selectedEvent = meets?.find(({ id }) => id === eventId);
   const {
+    id,
     title,
     eventStartTime,
-    eventType,
     eventEndTime,
     eventThumbnail,
     location,
     address,
     eventDescription,
     hostedBy,
-    isPaid,
     eventTags,
     speakers,
     price,
@@ -108,11 +107,21 @@ const SingleEvent = () => {
           </section>
         </div>
 
-        <button className="rspv" onClick={() => setOpen(!open)}>
-          RSPV
-        </button>
+        {selectedEvent?.rspv ? (
+          <button
+            className="rspv"
+            disabled={true}
+            onClick={() => setOpen(!open)}
+          >
+            Already RSPVed
+          </button>
+        ) : (
+          <button className="rspv" onClick={() => setOpen(!open)}>
+            RSPV
+          </button>
+        )}
       </section>
-      {open && <RspvModal open={open} setOpen={setOpen} />}
+      {open && <RspvModal open={open} setOpen={setOpen} meetId={id} />}
     </main>
   );
 };

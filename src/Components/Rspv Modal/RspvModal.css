@@ -1,7 +1,7 @@
 .modal-main {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     background-color: #0000005c;
     top: 0;
     left: 0;
@@ -11,12 +11,46 @@
 }
 
 form {
-    width: 400px;
+    width: 350px;
     background-color: white;
-    padding: 1rem;
+    padding: 1.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
+}
+
+form svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    padding: 0.3rem;
+    border-radius: 1px 1px 1px 12px;
+    cursor: pointer;
+}
+
+form svg:hover {
+    background-color: red;
+    color: white;
+
+}
+
+.input-rspv {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-rspv input {
+    height: 2rem;
+    border: 2px solid #2b6dff;
+    border-radius: 6px;
+    padding: 0.4rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+form p {
+    color: gray;
 }
