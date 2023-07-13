@@ -5,4 +5,18 @@
     background-color: #0000005c;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 400px;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
 }

@@ -10,16 +10,12 @@ const RspvModal = ({ open, setOpen }) => {
         <h2>Complete Your RSPV</h2>
         <p>Fill your personal information</p>
         <div className="input-rspv">
-          <label htmlFor="r-name">
-            Name:
-            <input type="text" />
-          </label>
+          <label htmlFor="r-name">Name:</label>
+          <input type="text" />
         </div>
         <div className="input-rspv">
-          <label htmlFor="r-name">
-            Email:
-            <input type="email" />
-          </label>
+          <label htmlFor="r-name">Email:</label>
+          <input type="email" />
         </div>
         <p>* You have to make the payment at venue</p>
         <button className="rspv">RSPV</button>
