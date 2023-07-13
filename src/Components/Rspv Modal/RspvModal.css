@@ -1,0 +1,8 @@
+.modal-main {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #0000005c;
+    top: 0;
+    left: 0;
+}

@@ -3,3 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  padding: 0 12rem;
+  background-color: #f7f7f7;
+}
+
+:root {
+  --primary-color: #F64060;
+}

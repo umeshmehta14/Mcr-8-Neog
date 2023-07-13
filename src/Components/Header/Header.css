@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid;
+}
+
+nav p {
+    cursor: pointer;
+}
+
+.search-box input {
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+    font-weight: bold;
+    font-size: 1rem;
+}

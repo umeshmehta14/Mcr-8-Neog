@@ -1,9 +1,19 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
+import { meetups } from "../Data/Data";
 
 export const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
-  return <DataContext.Provider value={{}}>{children}</DataContext.Provider>;
+  const [meets, setMeets] = useState(meetups.meetups);
+  const [filters, setFilters] = useState({
+    sortBy: "both",
+    searchKey: "",
+  });
+  return (
+    <DataContext.Provider value={{ meets, filters, setFilters }}>
+      {children}
+    </DataContext.Provider>
+  );
 };
 
 export const useData = () => useContext(DataContext);

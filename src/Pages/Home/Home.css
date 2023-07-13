@@ -1,0 +1,49 @@
+.container {
+    padding-bottom: 4rem;
+}
+
+.top-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.top-heading select {
+    width: 100px;
+    height: 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.meets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.event-box img {
+    width: 300px;
+    border-radius: 16px;
+    height: 200px;
+}
+
+.event-box {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.date-time {
+    color: gray;
+}
+
+.eventType {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    padding: 0.3rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
